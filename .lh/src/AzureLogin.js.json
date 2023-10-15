@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/AzureLogin.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1697360144584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1697363744667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n const AzureLogin = () => {\n   const handleLogin = () => {\n     // Replace these placeholders with your Azure AD application details\n     const clientId = 'c9628c9e-07fd-488a-811a-9c1a12ffa7fe';\n-    const redirectUri = 'http://localhost:3000/login/callback'; // This should match your Azure AD app's redirect URI\n+    const redirectUri = 'http://localhost:8080/login/oauth2/code/'; // This should match your Azure AD app's redirect URI\n     const authorizationEndpoint = 'https://login.microsoftonline.com/aa850f7f-4144-444d-bcbf-be717b02c121/oauth2/v2.0/authorize';\n \n     // Construct the authorization URL\n     const authUrl = `${authorizationEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code&scope=openid profile`;\n"
+                }
+            ],
+            "date": 1697360144584,
+            "name": "Commit-0",
+            "content": "import React from 'react';\n\nconst AzureLogin = () => {\n  const handleLogin = () => {\n    // Replace these placeholders with your Azure AD application details\n    const clientId = 'c9628c9e-07fd-488a-811a-9c1a12ffa7fe';\n    const redirectUri = 'http://localhost:3000/login/callback'; // This should match your Azure AD app's redirect URI\n    const authorizationEndpoint = 'https://login.microsoftonline.com/aa850f7f-4144-444d-bcbf-be717b02c121/oauth2/v2.0/authorize';\n\n    // Construct the authorization URL\n    const authUrl = `${authorizationEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code&scope=openid profile`;\n\n    // Redirect the user to the Azure AD login page\n    window.location.href = authUrl;\n  };\n\n  return (\n    <div>\n      <button onClick={handleLogin}>Login with Azure AD</button>\n    </div>\n  );\n};\n\nexport default AzureLogin;\n"
+        }
+    ]
+}

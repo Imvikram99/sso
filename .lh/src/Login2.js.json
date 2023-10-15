@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/Login2.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1697366747646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1697366747646,
+            "name": "Commit-0",
+            "content": "import React from 'react';\nimport axios from 'axios';\n\nconst Login2 = () => {\n  const handleLogin = async () => {\n    try {\n      // Redirect to Spring Boot OAuth2 login endpoint\n      window.location.href = 'http://localhost:8080/oauth2/authorize/azure-client';\n    } catch (error) {\n      console.error('An error occurred during login:', error);\n    }\n  };\n\n  return (\n    <div>\n      <button onClick={handleLogin}>Login with Azure2</button>\n    </div>\n  );\n};\n\nexport default Login2;\n"
+        }
+    ]
+}

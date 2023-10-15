@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import Login from './Login';
-import Login2 from './Login2';
 import AzureLogin from './AzureLogin';
 
 function App() {
@@ -10,7 +9,6 @@ function App() {
       <header className="App-header">
         <h1>My React App</h1>
         <Login />
-        <Login2 />
         <AzureLogin></AzureLogin>
       </header>
     </div>

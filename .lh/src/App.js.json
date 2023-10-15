@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/App.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1693924851124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1693925027246,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n import logo from './logo.svg';\n import './App.css';\n+import Login from './Login';\n \n function App() {\n   return (\n     <div className=\"App\">\n"
+                },
+                {
+                    "date": 1697360195636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,16 @@\n import logo from './logo.svg';\n import './App.css';\n import Login from './Login';\n+import AzureLogin from './AzureLogin';\n \n function App() {\n   return (\n     <div className=\"App\">\n       <header className=\"App-header\">\n         <h1>My React App</h1>\n         <Login />\n+        <AzureLogin></AzureLogin>\n       </header>\n     </div>\n   );\n }\n"
+                },
+                {
+                    "date": 1697366679337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n     <div className=\"App\">\n       <header className=\"App-header\">\n         <h1>My React App</h1>\n         <Login />\n+        <Login2 />\n         <AzureLogin></AzureLogin>\n       </header>\n     </div>\n   );\n"
+                },
+                {
+                    "date": 1697366697938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import logo from './logo.svg';\n import './App.css';\n import Login from './Login';\n+import Login2 from './Login2';\n import AzureLogin from './AzureLogin';\n \n function App() {\n   return (\n"
+                }
+            ],
+            "date": 1693924851124,
+            "name": "Commit-0",
+            "content": "import logo from './logo.svg';\nimport './App.css';\n\nfunction App() {\n  return (\n    <div className=\"App\">\n      <header className=\"App-header\">\n        <h1>My React App</h1>\n        <Login />\n      </header>\n    </div>\n  );\n}\n\nexport default App;\n"
+        }
+    ]
+}
